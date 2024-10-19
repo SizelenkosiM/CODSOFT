@@ -188,8 +188,8 @@ section {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 760px;
-    height: 760px;
+    width: 720px;
+    height: 720px;
     overflow: hidden;
     pointer-events: none;
 }
@@ -198,8 +198,8 @@ section {
     position: absolute;
     right: 0;
     top: 0;
-    width: 760px;
-    height: 760px;
+    width: 720px;
+    height: 720px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -253,29 +253,31 @@ section {
 }
 
 .home .profession-box .proffession:nth-child(2),
-.home .profession-box .proffession:nth-child(4) {
+.home .profession-box .proffession:nth-child(3) {
     padding-bottom: 20px;
 }
 
 
 .home .proffession i {
     font-size: 3.8rem;
-    margin-left: 5rem;
+    margin-left: 1rem;
+    margin-top: 0;
 }
 
 .home .proffession h3 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     line-height: 1;
     font-weight: 600;
     margin-left: 2rem;
 }
 
 .home .profession-box .circle {
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border: var(--boarder);
     border-radius: 50%;
     margin-top: 0;
+    margin-bottom: 10rem;
 }
 
 .home .overlay {
@@ -283,24 +285,21 @@ section {
     top: 0;
     right: 0;
     width: 15rem;
-    /* Adjust the size of the overlay */
-    height: 4rem;
-    border-top: 360px solid var(--main-color);
-    /* Reduce the border sizes */
-    border-right: 360px solid var(--main-color);
-    border-bottom: 360px solid var(--main-color);
-    border-left: 360px solid transparent;
+    height: 3rem;
+    border-top: 300px solid var(--main-color);
+    border-right: 400px solid var(--main-color);
+    border-bottom: 400px solid var(--main-color);
+    border-left: 300px solid transparent;
 }
 
 
 .home-img img {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 40%;
+    width: 48%;
     pointer-events: none;
-    margin-left: 50rem;
-    margin-top: 17rem;
+    margin-left: 25rem;
+    margin-top: 5rem;
 }
 
 span {
@@ -646,7 +645,7 @@ ul li p {
 
 /*RESPONSIVENESS*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     html {
         font-size: 55%;
     }
@@ -658,10 +657,12 @@ ul li p {
     .home .profession-container .profession-box {
         right: -12rem;
         height: 85.8rem;
+        margin-right: 10rem;
+        background: transparent;
     }
 
     .home .profession-container .overlay {
-        right: -9rem;
+        left: 0;
     }
 }
 
@@ -728,6 +729,7 @@ ul li p {
         background: var(--bg-color);
         border-top: .1rem solid #3F51B5;
         box-shadow: var(--box-shadow);
+        display: none;
     }
 
     .nav-bar a {
